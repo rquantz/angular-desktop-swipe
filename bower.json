@@ -1,0 +1,22 @@
+{
+  "name": "angularjs-desktop-swipe",
+  "version": "0.0.0",
+  "authors": [
+    "Rick Quantz <rquantz@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "*"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3"
+  }
+}

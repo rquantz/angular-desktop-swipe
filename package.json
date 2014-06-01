@@ -7,5 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "~0.12",
+    "karma-jasmine": "~0.2",
+    "karma-chrome-launcher": "~0.1"
+  }
 }
