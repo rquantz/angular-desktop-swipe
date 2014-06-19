@@ -14,9 +14,11 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "*",
+    "jquery-mousewheel": "*",
     "angular": "*"
   },
   "devDependencies": {
-    "angular-mocks": "~1.3"
+    "angular-mocks": "~1.2"
   }
 }
