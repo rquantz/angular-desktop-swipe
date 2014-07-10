@@ -31,7 +31,6 @@ $(function() {
       outputString += "  [\n";
 
       for (var j = 0; j < output[i].length; j++) {
-        console.log(output[i][j])
         outputString += "    [";
         outputString += "{";
         outputString += "deltaX: " + output[i][j][0].deltaX;
