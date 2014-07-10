@@ -5,13 +5,14 @@
     "Rick Quantz <rquantz@gmail.com>"
   ],
   "license": "MIT",
-  "private": true,
+  "main": "dist/angular-desktop-swipe.min.js",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "Gruntfile.js",
+    "karma.conf.js"
   ],
   "dependencies": {
     "jquery": "*",
