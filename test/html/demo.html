@@ -1,0 +1,59 @@
+<html ng-app="swipeDemo">
+<head>
+  <script src="../../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../../bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../bower_components/angular/angular.js"></script>
+  <script src="../../lib/desktopSwipe.js"></script>
+  <script src="../../lib/services/dkSwipeObserver.js"></script>
+  <script src="../../lib/directives/dkSwipeup.js"></script>
+  <script src="../../lib/directives/dkSwipedown.js"></script>
+
+  <script>
+    angular.module('swipeDemo', ['desktopSwipe']);
+
+    angular.module('swipeDemo').controller('SwipeCtrl', function($scope) {
+      var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+      var i = 0;
+
+      $scope.next = function() {
+        i++;
+        if (i > colors.length - 1) { i = 0; }
+      }
+
+      $scope.prev = function() {
+        i--;
+        if (i < 0) { i = colors.length - 1; }
+      }
+
+      $scope.color = function() {
+        return {'background-color': colors[i]};
+      }
+    });
+
+  </script>
+
+  <style>
+    .demo {
+      height: 150px;
+      margin: 20px auto;
+      width: 800px;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div ng-controller="SwipeCtrl">
+    <div class="demo" ng-style="color()" dk-swipeup="next()" >Swipe up to change</div>
+  </div>
+
+  <div ng-controller="SwipeCtrl">
+    <div class="demo" ng-style="color()" dk-swipedown="next()">Swipe down to change</div>
+  </div>
+
+  <div ng-controller="SwipeCtrl">
+    <div class="demo" ng-style="color()" dk-swipeup="next()" dk-swipedown="prev()">Swipe to go back and forth</div>
+  </div>
+
+</body>
+</html>
