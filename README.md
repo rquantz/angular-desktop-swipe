@@ -3,5 +3,5 @@
 Handle two fingered swipes on desktop
 
 ````html
-<div dk-swipeup="doSomething()">Swipe Me!</div>
+<div dk-swipeup="doSomething()" dk-swipedown="doSomethingElse()">Swipe Me!</div>
 ````
